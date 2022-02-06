@@ -1,0 +1,31 @@
+ mysql -u root -p
+Enter password:*******
+ 
+
+mysql> show databases;
+
+mysql> use db_LoginDetails
+
+
+
+CREATE TABLE IF NOT EXISTS `members` (
+  `srno` int NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `user` varchar(100) DEFAULT NULL,
+  `pass` varchar(45) NOT NULL,
+  `regdate` date NOT NULL,
+   PRIMARY KEY (srno)
+);
+
+ALTER TABLE members AUTO_INCREMENT=1;
+
+alter table members add primary key(srno);
+
+
+ select * from members;
+
+
+
+
